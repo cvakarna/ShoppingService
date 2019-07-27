@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#17a2b866!important">
+  <a class="navbar-brand" style="cursor:pointer" routerLink="/recipes">RECIPE BOOK</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li routerLinkActive="active">
+        <!-- <a class="nav-link" href="#" (click)="onSelect('recipe')">RECIPES</a> -->
+        <a class="nav-link" routerLink="/recipes">RECIPES</a>
+      </li>
+      <li routerLinkActive="active">
+        <!-- <a class="nav-link" href="#" (click)="onSelect('shoppingList')">SHOPPING LIST</a> -->
+        <a class="nav-link" routerLink="/shopping-list">SHOPPING LIST</a>
+
+      </li>
+    </ul>
+    <ul class="navbar-nav navbar-right">
+      <li class="nav-item dropdown" appDropdown>
+        <a class="nav-link dropdown-toggle" style="cursor:pointer" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Manage
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" style="cursor:pointer">Saving Data</a>
+          <a class="dropdown-item" style="cursor:pointer">Fetching Data</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" style="cursor:pointer">Something else here</a>
+        </div>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
